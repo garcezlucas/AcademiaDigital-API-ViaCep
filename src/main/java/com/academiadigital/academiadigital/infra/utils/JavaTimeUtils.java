@@ -3,9 +3,7 @@ package com.academiadigital.academiadigital.infra.utils;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
-/**
- * @author Venilton Falvo Jr
- */
+
 public class JavaTimeUtils {
 	
 	private JavaTimeUtils() {}

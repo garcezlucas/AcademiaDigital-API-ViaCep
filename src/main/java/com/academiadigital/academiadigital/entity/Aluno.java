@@ -28,7 +28,7 @@ public class Aluno {
   @Column(unique = true)
   private String cpf;
 
-  private String bairro;
+  private String cep;
 
   private LocalDate dataDeNascimento;
 
