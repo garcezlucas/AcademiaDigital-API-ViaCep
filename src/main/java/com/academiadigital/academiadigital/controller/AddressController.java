@@ -15,7 +15,6 @@ import com.academiadigital.academiadigital.repository.AddressRepository;
 
 @RestController
 public class AddressController{
-    
 
     @Autowired
     private AddressInterface addressInterface;
@@ -24,13 +23,11 @@ public class AddressController{
     private AddressRepository addressRepository;
 
 
-    @GetMapping("/api/{cep}")
+    @GetMapping("/{cep}")
     public ResponseEntity<AddressResponse> getByCep(@PathVariable String cep){
 
-        //Buscando resultado da API do ViaCEP
         AddressResponse response = addressInterface.getAddressByCep(cep);
 
-        //Criando um novo registro no banco de dados
 
         if(response.getCep() != null){
             Address address = new Address(

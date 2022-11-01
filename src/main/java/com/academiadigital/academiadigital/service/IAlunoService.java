@@ -5,7 +5,6 @@ import com.academiadigital.academiadigital.entity.AvaliacaoFisica;
 import com.academiadigital.academiadigital.entity.form.AlunoForm;
 import com.academiadigital.academiadigital.entity.form.AlunoUpdateForm;
 
-import java.time.LocalDate;
 import java.util.List;
 
 public interface IAlunoService {
